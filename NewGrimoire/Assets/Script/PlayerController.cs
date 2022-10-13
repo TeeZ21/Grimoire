@@ -6,12 +6,12 @@ public class PlayerController : MonoBehaviour
 {
     #region Attributs
     [SerializeField] private Transform[] _posCharacter = null;
-
+    [SerializeField] private int _index = 1;
     #endregion Attributs
 
     void Start()
     {
-
+        transform.position = _posCharacter[1].position;
     }
 
     void Update()
@@ -23,17 +23,16 @@ public class PlayerController : MonoBehaviour
         bool moveUp = Input.GetKeyDown(KeyCode.UpArrow);
         bool moveDown = Input.GetKeyDown(KeyCode.DownArrow);
 
-        int index = 0;
-
-        if(moveUp)
+        if(moveDown && _index < _posCharacter.Length)
         {
-            for (int i = 0; i < _posCharacter.Length; i++)
-            {
-                transform.position = _posCharacter[index].position;
-            }
+            _index++;
+            transform.position = _posCharacter[_index].position;
         }
-
+        
+        if(moveUp && _index > 0)
+        {
+            _index--;
+            transform.position = _posCharacter[_index].position;
+        }
     }
-
-
 }
