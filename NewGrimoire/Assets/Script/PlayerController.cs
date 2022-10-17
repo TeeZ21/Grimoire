@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     #region Attributs
     [SerializeField] private Transform[] _posCharacter = null;
-    [SerializeField] private int _index = 1;
+    [SerializeField] private int _index;
     #endregion Attributs
 
     void Start()
