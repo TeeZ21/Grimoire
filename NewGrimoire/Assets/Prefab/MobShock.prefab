@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 9008279465137036162}
   - component: {fileID: 9008279465137036172}
   m_Layer: 0
-  m_Name: Mob
-  m_TagString: Untagged
+  m_Name: MobShock
+  m_TagString: Mob
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,7 +77,7 @@ GameObject:
   - component: {fileID: 9008279466152568172}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Mob
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,7 +125,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 20adcd722400f604c8e6f41a1c471399, type: 2}
+  - {fileID: 2100000, guid: 261e00d31d1cd8c4199fa21c6d4609a3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
