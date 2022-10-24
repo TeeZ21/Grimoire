@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] private MobController _mob = null;
     [SerializeField] private Transform _mobContainer = null;
     [SerializeField] private float _delay = 5f;
 
     [SerializeField] private Transform[] _spawnPos = null;
+    [SerializeField] private GameObject[] _mob = null;
 
 
     private float _timeStamp = 0;
@@ -30,8 +30,9 @@ public class Spawner : MonoBehaviour
         _timeStamp += Time.deltaTime;
         if (_timeStamp >= _delay)
         {
-            int index = Random.Range(0, _spawnPos.Length);
-            Instantiate(_mob, _spawnPos[index].position, Quaternion.identity, _mobContainer);
+            int mobIndex = Random.Range(0, _mob.Length);
+            int spawnIndex = Random.Range(0, _spawnPos.Length);
+            Instantiate(_mob[mobIndex], _spawnPos[spawnIndex].position, Quaternion.identity, _mobContainer);
             _timeStamp = 0;
         }
 

@@ -7,9 +7,7 @@ public class Weapon : MonoBehaviour
     #region Attributs
     [SerializeField] private Transform _bulletContainer = null;
     [SerializeField] private Transform _weaponPoint = null;
-    [SerializeField] private GameObject _bulletFire ;
-    [SerializeField] private GameObject _bulletWater;
-    [SerializeField] private GameObject _bulletShock;
+    [SerializeField] private GameObject[] _bulletTypes;
     #endregion Attributs
 
     void Start()
@@ -30,15 +28,15 @@ public class Weapon : MonoBehaviour
 
         if (fire)
         {
-            Instantiate(_bulletFire, _weaponPoint.position, Quaternion.identity, _bulletContainer);
+            Instantiate(_bulletTypes[0], _weaponPoint.position, Quaternion.identity, _bulletContainer);
         }
         if (water)
         {
-            Instantiate(_bulletWater, _weaponPoint.position, Quaternion.identity, _bulletContainer);
+            Instantiate(_bulletTypes[1], _weaponPoint.position, Quaternion.identity, _bulletContainer);
         }
         if (shock)
         {
-            Instantiate(_bulletShock, _weaponPoint.position, Quaternion.identity, _bulletContainer);
+            Instantiate(_bulletTypes[2], _weaponPoint.position, Quaternion.identity, _bulletContainer);
         }
     }
 }
