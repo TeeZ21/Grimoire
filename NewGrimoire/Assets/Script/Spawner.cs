@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     [SerializeField] private Transform _mobContainer = null;
-    [SerializeField] private float _delay = 5f;
+    [SerializeField] private float _delay = 10f;
 
     [SerializeField] private Transform[] _spawnPos = null;
     [SerializeField] private GameObject[] _mob = null;

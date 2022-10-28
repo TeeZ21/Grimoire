@@ -5,11 +5,11 @@ using UnityEngine;
 public class MobController : MonoBehaviour
 {
     #region Attributs
-    [SerializeField] private float _speed = 10f;
-    [SerializeField] public ETypes _mobTypes = ETypes.FIRE;
+    [SerializeField] private float _speed = 1f;
+    [SerializeField] public EBulletTypes _mobTypes = EBulletTypes.FIRE;
     #endregion Attributs
 
-    public ETypes MobTypes 
+    public EBulletTypes MobTypes 
     {
         get
         {
@@ -29,6 +29,6 @@ public class MobController : MonoBehaviour
 
     void Moving()
     {
-        transform.position = transform.position + transform.right * _speed * Time.deltaTime;
+        transform.position = transform.position + -transform.right * _speed * Time.deltaTime;
     }
 }

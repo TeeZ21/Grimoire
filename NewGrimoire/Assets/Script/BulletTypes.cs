@@ -1,6 +1,6 @@
 
 
-public enum ETypes
+public enum EBulletTypes
 {
     FIRE,
     WATER,
