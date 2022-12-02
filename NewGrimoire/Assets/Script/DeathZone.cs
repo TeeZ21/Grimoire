@@ -6,6 +6,7 @@ public class DeathZone : MonoBehaviour
 {
     public GameObject _gameOver = null;
     public GameObject _panelField = null;
+    public GameObject _image = null;
 
     void Start()
     {
@@ -24,6 +25,7 @@ public class DeathZone : MonoBehaviour
         {
             _gameOver.SetActive(true);
             _panelField.SetActive(false);
+            _image.SetActive(false);
             Time.timeScale = 0;
             Cursor.visible = true;
 

@@ -20,7 +20,6 @@ public class BulletMovement : MonoBehaviour
     {
         Moving();
         DestroyObjectDelayed();
-        Debug.Log(_score);
 
     }
 
