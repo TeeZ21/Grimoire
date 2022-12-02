@@ -6,7 +6,7 @@ public class BulletMovement : MonoBehaviour
 {
     #region Attributs
     [SerializeField] private int _speed = 20;
-    [SerializeField] private int _score = 0;
+    [SerializeField] public int _score;
     [SerializeField] public EBulletTypes _bulletTypes = EBulletTypes.FIRE;
     #endregion Attributs
 
@@ -20,8 +20,10 @@ public class BulletMovement : MonoBehaviour
     {
         Moving();
         DestroyObjectDelayed();
-    }         
-        
+        Debug.Log(_score);
+
+    }
+
     void Moving()
     {
         transform.position += transform.right * Time.deltaTime * _speed;
@@ -39,7 +41,8 @@ public class BulletMovement : MonoBehaviour
             MobController mob = other.GetComponentInParent<MobController>();
             if(_bulletTypes == mob.MobTypes)
             {
-                _score = _score + 10;
+                _score ++;
+                Debug.Log(_score);
                 Destroy(other.transform.parent.gameObject);
                 Destroy(gameObject);
             }

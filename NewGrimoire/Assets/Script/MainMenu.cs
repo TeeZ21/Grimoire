@@ -5,18 +5,13 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
-
     public void Play()
     {
         SceneManager.LoadScene("LVL_01");
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
