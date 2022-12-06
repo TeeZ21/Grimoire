@@ -145,8 +145,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 20
-  _score: 0
+  _wrongType: 0
   _bulletTypes: 1
+  _player: {fileID: 7360381813281995375, guid: a0484d858b489364b93be1ef059bc13c, type: 3}
 --- !u!54 &2167561817826682604
 Rigidbody:
   m_ObjectHideFlags: 0

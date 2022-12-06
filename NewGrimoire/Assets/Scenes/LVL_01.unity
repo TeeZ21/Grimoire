@@ -4051,6 +4051,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7360381813068286543, guid: a0484d858b489364b93be1ef059bc13c, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7360381813281995363, guid: a0484d858b489364b93be1ef059bc13c, type: 3}
       propertyPath: _inputField
       value: 
@@ -4126,6 +4130,10 @@ PrefabInstance:
     - target: {fileID: 7360381813281995375, guid: a0484d858b489364b93be1ef059bc13c, type: 3}
       propertyPath: m_Name
       value: Character
+      objectReference: {fileID: 0}
+    - target: {fileID: 7360381813281995375, guid: a0484d858b489364b93be1ef059bc13c, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0484d858b489364b93be1ef059bc13c, type: 3}

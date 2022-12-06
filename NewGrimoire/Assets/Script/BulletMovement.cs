@@ -6,8 +6,12 @@ public class BulletMovement : MonoBehaviour
 {
     #region Attributs
     [SerializeField] private int _speed = 20;
-    [SerializeField] public int _score;
-    [SerializeField] public EBulletTypes _bulletTypes = EBulletTypes.FIRE;
+    [SerializeField] private bool _wrongType = false;
+
+    public EBulletTypes _bulletTypes = EBulletTypes.FIRE;
+    public GameObject _player = null;
+
+
     #endregion Attributs
 
     void Start()
@@ -18,7 +22,14 @@ public class BulletMovement : MonoBehaviour
 
     void Update()
     {
-        Moving();
+        if (_wrongType == false)
+        {
+            Moving();
+        }
+        else
+        {
+            Reverse();
+        }
         DestroyObjectDelayed();
 
     }
@@ -26,6 +37,11 @@ public class BulletMovement : MonoBehaviour
     void Moving()
     {
         transform.position += transform.right * Time.deltaTime * _speed;
+    }
+
+    void Reverse()
+    {
+        transform.position -= transform.right * Time.deltaTime * _speed;
     }
 
     void DestroyObjectDelayed()
@@ -40,11 +56,20 @@ public class BulletMovement : MonoBehaviour
             MobController mob = other.GetComponentInParent<MobController>();
             if(_bulletTypes == mob.MobTypes)
             {
-                _score ++;
-                Debug.Log(_score);
+                _wrongType = false;
                 Destroy(other.transform.parent.gameObject);
                 Destroy(gameObject);
             }
+            if(_bulletTypes != mob.MobTypes)
+            {
+                _wrongType = true;
+                Reverse();
+            }
+        }
+
+        if(other.tag == "Player")
+        {
+            Destroy(_player);
         }
     }
 }
