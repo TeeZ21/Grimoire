@@ -251,6 +251,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 20
   _wrongType: 0
+  _scoreText: {fileID: 5034677585348395794, guid: 02aba1cf4b4edd7459fdf44f0e6820a9, type: 3}
+  _score: 0
   _bulletTypes: 2
   _player: {fileID: 7360381813281995375, guid: a0484d858b489364b93be1ef059bc13c, type: 3}
 --- !u!54 &2167561817826682604

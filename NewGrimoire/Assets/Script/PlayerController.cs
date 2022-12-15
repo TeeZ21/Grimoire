@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int _index;
     [SerializeField] private  TMP_InputField _inputField = null;
     [SerializeField] private int _score;
+    public GameObject _pauseMenu = null;
+    #endregion Attributs
 
     public int Score
     {
@@ -18,18 +20,32 @@ public class PlayerController : MonoBehaviour
             return _score;
         }
     }
-    #endregion Attributs
+
 
     void Start()
     {
         transform.position = _posCharacter[1].position;
         _inputField.ActivateInputField();
+
+        _pauseMenu.SetActive(false);
+        Cursor.visible = false;
     }
 
     void Update()
     {
-
+        PauseMenu();
     }
+
+    private void PauseMenu()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            _pauseMenu.SetActive(true);
+            Cursor.visible = true;
+            Time.timeScale = 0;
+        }
+    }
+
     public void Moving()
     {
 
