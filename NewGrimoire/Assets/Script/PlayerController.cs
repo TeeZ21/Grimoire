@@ -9,6 +9,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform[] _posCharacter = null;
     [SerializeField] private int _index;
     [SerializeField] private  TMP_InputField _inputField = null;
+    [SerializeField] private int _score;
+
+    public int Score
+    {
+        get
+        {
+            return _score;
+        }
+    }
     #endregion Attributs
 
     void Start()
@@ -19,26 +28,8 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-    }
-    /*private void Moving()
-    {
-        bool moveUp = Input.GetKeyDown(KeyCode.UpArrow);
-        bool moveDown = Input.GetKeyDown(KeyCode.DownArrow);
 
-        if(moveDown && _index < _posCharacter.Length)
-        {
-            _index++;
-            transform.position = _posCharacter[_index].position;
-        }
-        
-        if(moveUp && _index > 0)
-        {
-            _index--;
-            transform.position = _posCharacter[_index].position;
-        }
     }
-    */
-
     public void Moving()
     {
 
