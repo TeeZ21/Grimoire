@@ -12,7 +12,7 @@ public class BulletMovement : MonoBehaviour
     [SerializeField] private AudioSource _hitSound;
 
     [SerializeField] private EBulletTypes _bulletTypes = EBulletTypes.FIRE;
-    [SerializeField] private GameObject _player = null;
+    //[SerializeField] private GameObject _player = null;
 
     #endregion Attributs
 
@@ -66,13 +66,13 @@ public class BulletMovement : MonoBehaviour
             {
                 _wrongType = true;
                 Debug.Log(_wrongType);
-                _player.SetActive(false);
 
-                if (other.tag == "Player")
+                /*if (other.tag == "Player")
                 {
                     Debug.Log(_player);
                     Destroy(_player);
                 }
+                */
             }
 
         }
