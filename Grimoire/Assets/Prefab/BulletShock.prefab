@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4937190411998673983}
   - component: {fileID: 1414777545558060128}
   m_Layer: 0
-  m_Name: Pixel_Magic_Effects_Animations_0
+  m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

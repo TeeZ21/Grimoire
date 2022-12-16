@@ -9,29 +9,17 @@ public class BulletMovement : MonoBehaviour
     #region Attributs
     [SerializeField] private int _speed = 20;
     [SerializeField] private bool _wrongType = false;
-    [SerializeField] private TextMeshProUGUI _scoreText = null;
 
-    public int _score = 0;
-
-    public EBulletTypes _bulletTypes = EBulletTypes.FIRE;
-    public GameObject _player = null;
+    [SerializeField] private EBulletTypes _bulletTypes = EBulletTypes.FIRE;
+    [SerializeField] private GameObject _player = null;
 
 
     #endregion Attributs
 
     void Start()
     {
-        _score = 0;
-        _scoreText.text = "Score : " + _score;
-        Scoring(0);
-    }
 
-    void Scoring(int scoreToAdd)
-    {
-        _score += scoreToAdd;
-        _scoreText.text = "Score : " + _score;
     }
-
 
     void Update()
     {
@@ -61,10 +49,6 @@ public class BulletMovement : MonoBehaviour
         Destroy(gameObject, 5);
     }
 
-    void Scorring()
-    {
-        _score = _score + 10;
-    }
 
     void OnTriggerEnter(Collider other)
     {
@@ -74,9 +58,6 @@ public class BulletMovement : MonoBehaviour
             if(_bulletTypes == mob.MobTypes)
             {
                 _wrongType = false;
-                Scoring(10);
-                //Scoring();
-                Debug.Log(_score);
                 Destroy(other.transform.parent.gameObject);
                 Destroy(gameObject);
             }

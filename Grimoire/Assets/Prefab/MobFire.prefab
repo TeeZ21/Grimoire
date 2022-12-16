@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7986193275729848755}
   - component: {fileID: 2885520243556562831}
   m_Layer: 0
-  m_Name: Red_Idle_4
+  m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

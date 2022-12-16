@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2033809605148285470}
   - component: {fileID: 7370664237786595744}
   m_Layer: 0
-  m_Name: Idle_0
+  m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7360381813281995374}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2033809605148285470
 SpriteRenderer:
@@ -331,8 +331,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7360381813068286536}
-  - {fileID: 7360381813462255184}
   - {fileID: 8700897646372445846}
+  - {fileID: 7360381813462255184}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -355,6 +355,7 @@ MonoBehaviour:
   _index: 1
   _inputField: {fileID: 0}
   _score: 0
+  _pauseMenu: {fileID: 0}
 --- !u!114 &7360381813281995372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -417,5 +418,5 @@ Transform:
   m_Children:
   - {fileID: 7360381812959069678}
   m_Father: {fileID: 7360381813281995374}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

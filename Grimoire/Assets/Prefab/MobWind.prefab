@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4617094187329986967}
   - component: {fileID: 3187626130787822154}
   m_Layer: 0
-  m_Name: Green_Idle_5
+  m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 9008279465137036162}
   - component: {fileID: 9008279465137036172}
   m_Layer: 0
-  m_Name: MobShock
+  m_Name: MobWind
   m_TagString: Mob
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
+    #region Attributs
     [SerializeField] private Transform _mobContainer = null;
     [SerializeField] private float _delay = 10f;
 
@@ -11,7 +12,9 @@ public class Spawner : MonoBehaviour
     [SerializeField] private GameObject[] _mob = null;
 
 
-    private float _timeStamp = 0;
+    [SerializeField] private float _timeStamp = 0;
+    #endregion Attributs
+
 
 
     void Start()

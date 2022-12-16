@@ -6,7 +6,7 @@ using UnityEngine;
 public class PauseMenu : MonoBehaviour
 {
     #region Attributs
-    public GameObject _pauseMenu = null;
+    [SerializeField] private GameObject _pauseMenu = null;
     #endregion Attributs
 
     void Start()

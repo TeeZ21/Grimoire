@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class DeathZone : MonoBehaviour
 {
-    public GameObject _gameOver = null;
-    public GameObject _panelField = null;
-    public GameObject _image = null;
+    [SerializeField] private GameObject _gameOver = null;
+    [SerializeField] private GameObject _panelField = null;
+    [SerializeField] private GameObject _image = null;
 
     void Start()
     {

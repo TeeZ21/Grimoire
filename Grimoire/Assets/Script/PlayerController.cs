@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int _index;
     [SerializeField] private  TMP_InputField _inputField = null;
     [SerializeField] private int _score;
-    public GameObject _pauseMenu = null;
+    [SerializeField] private GameObject _pauseMenu = null;
     #endregion Attributs
 
     public int Score

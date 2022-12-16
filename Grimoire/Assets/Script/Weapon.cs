@@ -34,9 +34,9 @@ public class Weapon : MonoBehaviour
             Debug.Log("Water");
             Instantiate(_bulletTypes[1], _weaponPoint.position, Quaternion.identity, _bulletContainer);
         }
-        if(_inputField.text == "Shock")
+        if(_inputField.text == "Wind")
         {
-            Debug.Log("Shock");
+            Debug.Log("Wind");
             Instantiate(_bulletTypes[2], _weaponPoint.position, Quaternion.identity, _bulletContainer);
         }
     }
