@@ -439,7 +439,7 @@ GameObject:
   - component: {fileID: 800030799}
   - component: {fileID: 800030798}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -485,7 +485,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: gRiMOire
+  m_text: Grimoire
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a832e74b68d0edf4cb74439df6ab1a21, type: 2}
   m_sharedMaterial: {fileID: 3546693755042841607, guid: a832e74b68d0edf4cb74439df6ab1a21, type: 2}
@@ -518,7 +518,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 103
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535

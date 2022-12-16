@@ -9,17 +9,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform[] _posCharacter = null;
     [SerializeField] private int _index;
     [SerializeField] private  TMP_InputField _inputField = null;
-    [SerializeField] private int _score;
+    [SerializeField] private AudioSource _grass = null;
     [SerializeField] private GameObject _pauseMenu = null;
     #endregion Attributs
 
-    public int Score
-    {
-        get
-        {
-            return _score;
-        }
-    }
 
 
     void Start()
@@ -55,6 +48,7 @@ public class PlayerController : MonoBehaviour
             {
                 _index++;
                 transform.position = _posCharacter[_index].position;
+                _grass.Play();
             }
         }
         if(_inputField.text == "Down")
@@ -63,6 +57,7 @@ public class PlayerController : MonoBehaviour
             {
                 _index--;
                 transform.position = _posCharacter[_index].position;
+                _grass.Play();
             }
         }
         _inputField.ActivateInputField();        

@@ -28,8 +28,6 @@ public class DeathZone : MonoBehaviour
             _image.SetActive(false);
             Time.timeScale = 0;
             Cursor.visible = true;
-
-
         }
     }
 }

@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -1900874376, guid: f1acb3c36e378c047bbc0d881f6349c4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -311,6 +311,7 @@ GameObject:
   - component: {fileID: 7360381813281995373}
   - component: {fileID: 7360381813281995372}
   - component: {fileID: 7360381813281995363}
+  - component: {fileID: 5267115883392920172}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -354,7 +355,7 @@ MonoBehaviour:
   - {fileID: 0}
   _index: 1
   _inputField: {fileID: 0}
-  _score: 0
+  _grass: {fileID: 0}
   _pauseMenu: {fileID: 0}
 --- !u!114 &7360381813281995372
 MonoBehaviour:
@@ -375,6 +376,9 @@ MonoBehaviour:
   - {fileID: 5250085935798273347, guid: 491cf7dd61a9cc041aafb6e466bd1d08, type: 3}
   - {fileID: 5250085935798273347, guid: fd32a82b3d94602429ad4ebb286197b9, type: 3}
   _inputField: {fileID: 0}
+  _fireSound: {fileID: 0}
+  _waterSound: {fileID: 0}
+  _windSound: {fileID: 0}
 --- !u!114 &7360381813281995363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,6 +392,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _inputField: {fileID: 0}
+--- !u!54 &5267115883392920172
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7360381813281995375}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7360381813462255185
 GameObject:
   m_ObjectHideFlags: 0

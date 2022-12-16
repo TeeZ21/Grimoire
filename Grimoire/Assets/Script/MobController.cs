@@ -6,7 +6,7 @@ public class MobController : MonoBehaviour
 {
     #region Attributs
     [SerializeField] private float _speed = 1f;
-    [SerializeField] public EBulletTypes _mobTypes = EBulletTypes.FIRE;
+    [SerializeField] private EBulletTypes _mobTypes = EBulletTypes.FIRE;
     #endregion Attributs
 
     public EBulletTypes MobTypes 
