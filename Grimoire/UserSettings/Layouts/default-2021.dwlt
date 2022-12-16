@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Hierarchy
   m_RootView: {fileID: 10}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 0
     width: 666
     height: 386
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 23}
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 78
+  controlID: 88
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -95,8 +95,8 @@ MonoBehaviour:
     y: 0
     width: 713
     height: 561
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 121
+  controlID: 41
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -173,8 +173,8 @@ MonoBehaviour:
     y: 0
     width: 454
     height: 947
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -199,8 +199,8 @@ MonoBehaviour:
     y: 0
     width: 274
     height: 561
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -328,7 +328,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 122
+  controlID: 162
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -354,7 +354,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 123
+  controlID: 163
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -385,7 +385,7 @@ MonoBehaviour:
     m_SaveData: []
   m_MixersTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 82cfffff
+    m_SelectedIDs: 
     m_LastClickedID: -12414
     m_ExpandedIDs: 12eb343c
     m_RenameOverlay:
@@ -693,7 +693,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 54380
+  m_LastSelectedObjectID: -36838
 --- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -735,22 +735,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Script
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Script
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\v.touze\Documents\GitHub\NewGrimoire\Grimoire
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 59}
-    m_SelectedIDs: 18610000
-    m_LastClickedID: 24856
-    m_ExpandedIDs: 00000000dc600000de600000e660000000ca9a3bffffff7f
+    m_SelectedIDs: 40610000
+    m_LastClickedID: 24896
+    m_ExpandedIDs: 00000000fc600000fe6000000461000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -778,7 +778,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000dc600000de600000
+    m_ExpandedIDs: 00000000fc600000fe600000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -806,7 +806,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000c27a00006a5f00005c7100004471000010770000b8640000a4630000ca5f0000ba7200001e8c0000a46b00002260000018780000465f0000d0b50000e8b60000b65f000040600000
+    m_ExpandedInstanceIDs: c6230000c27a00006a5f00005c7100004471000010770000b8640000a4630000ca5f0000ba7200001e8c0000a46b00002260000018780000465f0000d0b50000e8b60000b65f0000406000005a600000c65f0000c85f000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -908,7 +908,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: fec9feff56cafeffa0cbfeffaccbfeff3ad1feff90d1feffc4d3feff7ad5fefff2d5feffaee2fefff0e6feff0804ffffaa21ffff7023ffff34fbffff36fbffff385e000060d3000002d4000006d4000020d400002ad4000034d4000076d4000088d40000d4d40000e2d40000eed400000cd5000076d5000094d5000020f6000062f600008af70000520301005e04010038080100
+      m_ExpandedIDs: 5ef8feffb6f8fefffef9feff0cfafeff961fffffee1fffff3821ffff4621ffff8c22ffffec22ffff6423ffffc826fffff43bffff9c3cffffd63effff1a70ffffd081ffff3a8fffffd29dffff5eaaffff3eabffffccb8ffff3ec7ffff94d5fffffcd9ffff06e7ffff52f6ffffbcf9ffff36fbffff8e610000b0610000f865000018660000b0670000d0670000e2670000287a0000367a00004c7a0000567a00008e7a0000ce7d00001c7e00008a7e0000a47e0000ae7e0000b87e0000f07e0000fa7e00000c7f0000727f0000907f0000fa7f000018800000be91000038920000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1157,9 +1157,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -43.943558, y: -7.730193, z: -24.878254}
+    m_Target: {x: 332.0457, y: 145.55594, z: 15.266354}
     speed: 2
-    m_Value: {x: -43.943558, y: -7.730193, z: -24.878254}
+    m_Value: {x: 332.0457, y: 145.55594, z: 15.266354}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1206,13 +1206,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.0033970133, y: 0.23330207, z: -0.0001911647, w: 0.9724349}
+    m_Target: {x: -0.21544933, y: -0.011888979, z: -0.0019822754, w: 0.9764783}
     speed: 2
-    m_Value: {x: 0.0033968927, y: 0.23329379, z: -0.0001911579, w: 0.9724003}
+    m_Value: {x: -0.21544142, y: -0.011888542, z: -0.0019822025, w: 0.97644246}
   m_Size:
-    m_Target: 5.4503202
+    m_Target: 56.313076
     speed: 2
-    m_Value: 5.4503202
+    m_Value: 56.313076
   m_Ortho:
     m_Target: 0
     speed: 2

@@ -250,7 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 791a2695e880c244e926f18bc0e1d0e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 20
+  _speed: 25
   _wrongType: 0
   _hitSound: {fileID: 8153174555199890784}
   _bulletTypes: 0

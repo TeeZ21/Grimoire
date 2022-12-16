@@ -38,6 +38,5 @@ public class Spawner : MonoBehaviour
             Instantiate(_mob[mobIndex], _spawnPos[spawnIndex].position, Quaternion.identity, _mobContainer);
             _timeStamp = 0;
         }
-
     }
 }
